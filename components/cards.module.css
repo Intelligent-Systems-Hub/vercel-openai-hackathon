@@ -1,0 +1,258 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.code {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.legs {
+  display: grid;
+  gap: 6px;
+}
+
+.leg {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.legFlight {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  color: var(--muted);
+}
+
+.legRoute {
+  color: var(--ink);
+}
+
+.legTime {
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.was {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.sup {
+  font-size: 10px;
+  color: var(--accent);
+  margin-left: 2px;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px dashed var(--line);
+  margin: 2px 0;
+}
+
+/* alert */
+
+.alert {
+  border-color: var(--warn-line);
+  background: var(--warn-bg);
+}
+
+.evidence {
+  font-size: 13px;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.evidence strong {
+  color: var(--warn);
+}
+
+.option {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  background: var(--surface);
+  display: grid;
+  gap: 8px;
+}
+
+.optionTop {
+  border-color: var(--agent);
+  box-shadow: 0 0 0 1px var(--agent) inset;
+}
+
+.optionHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--agent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.price {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--chip);
+  color: var(--ink);
+}
+
+.why {
+  border-left: 3px solid var(--agent);
+  padding: 6px 0 6px 10px;
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.why ul {
+  margin: 0;
+  padding-left: 16px;
+  color: var(--ink);
+}
+
+.path {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+.tradeoff {
+  font-size: 12px;
+  color: var(--warn);
+}
+
+.button {
+  appearance: none;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--ink);
+  color: var(--surface);
+}
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.buttonQuiet {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+/* approval */
+
+.sheet {
+  border-color: var(--agent);
+}
+
+.amount {
+  font-size: 28px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions .button {
+  flex: 1;
+}
+
+/* booking + ledger */
+
+.ok {
+  color: var(--ok);
+  font-weight: 600;
+}
+
+.steps {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 12px;
+  color: var(--muted);
+  display: grid;
+  gap: 2px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.reason {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--line, #d6d9de);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: inherit;
+  background: transparent;
+  color: inherit;
+}
+
+button.chip {
+  cursor: pointer;
+  font: inherit;
+}

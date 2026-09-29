@@ -1,0 +1,5 @@
+{
+  "status": 200,
+  "content_type": "application/json",
+  "body": "{\"id\": \"8AB90127CD364715X\", \"status\": \"COMPLETED\", \"purchase_units\": [{\"payments\": {\"captures\": [{\"id\": \"9DE679366FF908993Y\", \"status\": \"COMPLETED\"}]}}]}"
+}

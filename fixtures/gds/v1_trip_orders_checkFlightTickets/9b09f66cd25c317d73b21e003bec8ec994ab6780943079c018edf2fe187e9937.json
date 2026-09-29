@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "fullPath": "/v1/trip/orders/checkFlightTickets",
+    "requestDigest": "9b09f66cd25c317d73b21e003bec8ec994ab6780943079c018edf2fe187e9937",
+    "capturedAt": "2026-07-27T18:32:13.198816+00:00",
+    "ok": true,
+    "error": "",
+    "note": "void/refund eligibility on real issued tickets"
+  },
+  "request": {
+    "tickets": [
+      {
+        "number": "0015550100560"
+      },
+      {
+        "number": "0015550100562"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body": "{\n  \"timestamp\": \"2026-07-27T18:32:12\",\n  \"request\": {\n    \"tickets\": [\n      {\n        \"number\": \"0015550100560\"\n      },\n      {\n        \"number\": \"0015550100562\"\n      }\n    ]\n  },\n  \"tickets\": [\n    {\n      \"number\": \"0015550100560\",\n      \"isVoidable\": true,\n      \"isRefundable\": false,\n      \"isChangeable\": true,\n      \"exchangePenalties\": [\n        {\n          \"applicability\": \"BEFORE_DEPARTURE\",\n          \"conditionsApply\": true,\n          \"penalty\": {\n            \"amount\": \"0.0\",\n            \"currencyCode\": \"USD\"\n          },\n          \"hasNoShowCost\": true,\n          \"noShowPenalty\": {\n            \"penalty\": {\n              \"amount\": \"0.0\",\n              \"currencyCode\": \"USD\"\n            },\n            \"source\": \"Category 31\"\n          },\n          \"source\": \"Category 31\"\n        },\n        {\n          \"applicability\": \"AFTER_DEPARTURE\",\n          \"conditionsApply\": true,\n          \"penalty\": {\n            \"amount\": \"0.0\",\n            \"currencyCode\": \"USD\"\n          },\n          \"hasNoShowCost\": true,\n          \"noShowPenalty\": {\n            \"penalty\": {\n              \"amount\": \"0.0\",\n              \"currencyCode\": \"USD\"\n            },\n            \"source\": \"Category 31\"\n          },\n          \"source\": \"Category 31\"\n        }\n      ]\n    },\n    {\n      \"number\": \"0015550100562\",\n      \"isVoidable\": true,\n      \"isRefundable\": false,\n      \"isChangeable\": true,\n      \"exchangePenalties\": [\n        {\n          \"applicability\": \"BEFORE_DEPARTURE\",\n          \"conditionsApply\": true,\n          \"penalty\": {\n            \"amount\": \"0.0\",\n            \"currencyCode\": \"USD\"\n          },\n          \"hasNoShowCost\": true,\n          \"noShowPenalty\": {\n            \"penalty\": {\n              \"amount\": \"0.0\",\n              \"currencyCode\": \"USD\"\n            },\n            \"source\": \"Category 31\"\n          },\n          \"source\": \"Category 31\"\n        },\n        {\n          \"applicability\": \"AFTER_DEPARTURE\",\n          \"conditionsApply\": true,\n          \"penalty\": {\n            \"amount\": \"0.0\",\n            \"currencyCode\": \"USD\"\n          },\n          \"hasNoShowCost\": true,\n          \"noShowPenalty\": {\n            \"penalty\": {\n              \"amount\": \"0.0\",\n              \"currencyCode\": \"USD\"\n            },\n            \"source\": \"Category 31\"\n          },\n          \"source\": \"Category 31\"\n        }\n      ]\n    }\n  ]\n}"
+  }
+}

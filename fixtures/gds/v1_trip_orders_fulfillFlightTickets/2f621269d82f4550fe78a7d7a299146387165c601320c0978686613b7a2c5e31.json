@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "fullPath": "/v1/trip/orders/fulfillFlightTickets",
+    "requestDigest": "2f621269d82f4550fe78a7d7a299146387165c601320c0978686613b7a2c5e31",
+    "capturedAt": "2026-07-27T18:32:07.269016+00:00",
+    "ok": true,
+    "error": "",
+    "note": "issue e-tickets, CASH FOP, printer profile 1"
+  },
+  "request": {
+    "confirmationId": "QKRVTA",
+    "fulfillments": [
+      {
+        "ticketingQualifiers": {
+          "priceQuoteRecordIds": [
+            "1"
+          ]
+        },
+        "payment": {
+          "primaryFormOfPayment": 1
+        }
+      }
+    ],
+    "formsOfPayment": [
+      {
+        "type": "CASH"
+      }
+    ],
+    "receivedFrom": "TRIP-DEMO",
+    "designatePrinters": [
+      {
+        "profileNumber": 1
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body": "{\n  \"timestamp\": \"2026-07-27T18:32:07\",\n  \"tickets\": [\n    {\n      \"isCommitted\": true,\n      \"number\": \"0015550100560\",\n      \"date\": \"2026-07-27\",\n      \"travelerGivenName\": \"MAYA\",\n      \"travelerSurname\": \"RIVERA\",\n      \"payment\": {\n        \"total\": \"513.48\",\n        \"currencyCode\": \"USD\"\n      },\n      \"ticketStatusName\": \"Issued\",\n      \"ticketStatusCode\": \"TE\",\n      \"ticketingPcc\": \"DM01\"\n    },\n    {\n      \"isCommitted\": true,\n      \"number\": \"0015550100562\",\n      \"date\": \"2026-07-27\",\n      \"travelerGivenName\": \"SAM\",\n      \"travelerSurname\": \"RIVERA\",\n      \"payment\": {\n        \"total\": \"513.48\",\n        \"currencyCode\": \"USD\"\n      },\n      \"ticketStatusName\": \"Issued\",\n      \"ticketStatusCode\": \"TE\",\n      \"ticketingPcc\": \"DM01\"\n    }\n  ],\n  \"request\": {\n    \"confirmationId\": \"QKRVTA\",\n    \"retainAccounting\": false,\n    \"fulfillments\": [\n      {\n        \"ticketingQualifiers\": {\n          \"priceWithTaxes\": true,\n          \"returnFareFlexibilityDetails\": false,\n          \"priceQuoteRecordIds\": [\n            \"1\"\n          ],\n          \"isNetFareCommission\": false\n        },\n        \"payment\": {\n          \"primaryFormOfPayment\": 1\n        }\n      }\n    ],\n    \"receivedFrom\": \"TRIP-DEMO\",\n    \"designatePrinters\": [\n      {\n        \"profileNumber\": 1\n      }\n    ],\n    \"formsOfPayment\": [\n      {\n        \"type\": \"CASH\"\n      }\n    ],\n    \"generateSingleInvoice\": false,\n    \"commitTicketToBookingWaitTime\": 0,\n    \"acceptNegotiatedFare\": true,\n    \"acceptPriceChanges\": true,\n    \"backDatePriceQuoteMethod\": \"Reprice\",\n    \"priceQuoteExpirationMethod\": \"Reprice\"\n  }\n}"
+  }
+}

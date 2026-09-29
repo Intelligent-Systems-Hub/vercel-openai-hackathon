@@ -1,0 +1,213 @@
+.panel {
+  background: var(--stage-2);
+  border: 1px solid var(--stage-line);
+  border-radius: 14px;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stage-muted);
+}
+
+.toggle {
+  display: inline-flex;
+  border: 1px solid var(--stage-line);
+  border-radius: 9px;
+  overflow: hidden;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.toggle button {
+  appearance: none;
+  border: 0;
+  padding: 5px 10px;
+  background: transparent;
+  color: var(--stage-ink);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.toggle button[aria-pressed="true"] {
+  background: var(--graph-ctx);
+  color: #fff;
+}
+
+.toggle button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.canvas {
+  width: 100%;
+  height: auto;
+  background-image: radial-gradient(circle, var(--stage-line) 1px, transparent 1px);
+  background-size: 16px 16px;
+  border-radius: 10px;
+}
+
+/* nodes */
+
+.node rect {
+  fill: var(--stage);
+  stroke: var(--stage-line);
+  stroke-width: 1.3;
+  transition: stroke 0.25s ease, opacity 0.25s ease;
+}
+
+.node {
+  animation: appear 0.35s ease;
+  transition: opacity 0.25s ease;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.label {
+  fill: var(--stage-ink);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.sub {
+  fill: var(--stage-muted);
+  font-size: 10px;
+}
+
+.event rect {
+  stroke: var(--graph-hot);
+}
+
+.hot rect {
+  stroke-width: 2;
+}
+
+.segment.hot rect,
+.booking.hot rect,
+.trip.hot rect,
+.party.hot rect {
+  stroke: var(--graph-spine);
+}
+
+.affected rect {
+  stroke: var(--graph-hot);
+  stroke-width: 2;
+}
+
+.lit rect {
+  stroke: var(--graph-ctx);
+  stroke-width: 2;
+}
+
+.recommendation rect {
+  stroke: var(--graph-good);
+  stroke-width: 2;
+}
+
+.unused rect {
+  stroke-dasharray: 4 3;
+}
+
+.unused {
+  opacity: 0.55;
+}
+
+.muted {
+  opacity: 0.2;
+}
+
+/* edges */
+
+.edge {
+  stroke: var(--stage-line);
+  stroke-width: 1.6;
+}
+
+.edgeHot {
+  stroke: var(--graph-spine);
+}
+
+.edgeCtx {
+  stroke: var(--graph-ctx);
+}
+
+.edgeGood {
+  stroke: var(--graph-good);
+  stroke-dasharray: 5 3;
+}
+
+/* inspector */
+
+.inspector {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--stage-ink);
+}
+
+.inspector h4 {
+  margin: 6px 0 0;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stage-muted);
+}
+
+.status {
+  font-size: 12px;
+  color: var(--stage-muted);
+}
+
+.rec {
+  display: grid;
+  gap: 2px;
+  border: 1px solid var(--graph-good);
+  border-radius: 9px;
+  padding: 9px 11px;
+}
+
+.recLabel {
+  font-size: 11px;
+  color: var(--graph-good);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.why,
+.unusedList {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+}
+
+.path {
+  display: block;
+  font-size: 11px;
+  color: var(--stage-muted);
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+.unusedList {
+  color: var(--stage-muted);
+}
+
+.unusedList strong {
+  color: var(--stage-ink);
+}

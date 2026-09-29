@@ -1,0 +1,334 @@
+{
+  "capturedAt": "2026-07-29T00:00:00+00:00",
+  "source": "replay://gds",
+  "environment": "CERT",
+  "note": "The flight and ORD-hotel captures were re-recorded on 2026-07-29 for the rain-delay scene. The originals were a two-night JFK<->YYC shop for ONE adult; the booking carries 2 adults + an infant and now runs five nights, and the delay scene reshops only the ONWARD leg out of the hub. Every flight the demo shows is a row in one of these files.",
+  "dates": {
+    "depart": "2026-07-30",
+    "return": "2026-08-04",
+    "overnight": "2026-07-31"
+  },
+  "airports": {
+    "origin": "JFK",
+    "destination": "YYC",
+    "hub": "ORD"
+  },
+  "party": {
+    "adults": 2,
+    "infants": 1
+  },
+  "pairs": [
+    {
+      "fullPath": "/v1/hotels/checkHotelRate",
+      "file": "fixtures/gds/v1_hotels_checkHotelRate/1951a01007630961e7dfbb5c2e7fa910a75012b8683888a0b5b5a1e249c2ca5d.json",
+      "digest": "1951a01007630961e7dfbb5c2e7fa910a75012b8683888a0b5b5a1e249c2ca5d",
+      "ok": true,
+      "error": "",
+      "note": "hub pass1: adults only pricecheck"
+    },
+    {
+      "fullPath": "/v1/hotels/checkHotelRate",
+      "file": "fixtures/gds/v1_hotels_checkHotelRate/2bd3d10ad1f29b1900bb261d1e1b49c7dfbaec8997e135312fe072c3a42704a8.json",
+      "digest": "2bd3d10ad1f29b1900bb261d1e1b49c7dfbaec8997e135312fe072c3a42704a8",
+      "ok": true,
+      "error": "",
+      "note": "hub pass2: + infant age 1 pricecheck"
+    },
+    {
+      "fullPath": "/v1/hotels/checkHotelRate",
+      "file": "fixtures/gds/v1_hotels_checkHotelRate/3f9bf307f455bcf386b4a333316b82f2f4c7d7cd044c8913668ae2a770081f29.json",
+      "digest": "3f9bf307f455bcf386b4a333316b82f2f4c7d7cd044c8913668ae2a770081f29",
+      "ok": true,
+      "error": "",
+      "note": "hub pass2: + infant age 1 pricecheck"
+    },
+    {
+      "fullPath": "/v1/hotels/checkHotelRate",
+      "file": "fixtures/gds/v1_hotels_checkHotelRate/4df75cc69cd0d38b73b775880416e3b1f5f2a64ee10442fc4ae4f9a925d0836f.json",
+      "digest": "4df75cc69cd0d38b73b775880416e3b1f5f2a64ee10442fc4ae4f9a925d0836f",
+      "ok": true,
+      "error": "",
+      "note": "hub pass1: adults only pricecheck"
+    },
+    {
+      "fullPath": "/v1/hotels/checkHotelRate",
+      "file": "fixtures/gds/v1_hotels_checkHotelRate/530c25e58edf19815b6ef530d37c4f44668e3c8f87c09990269b129507240b59.json",
+      "digest": "530c25e58edf19815b6ef530d37c4f44668e3c8f87c09990269b129507240b59",
+      "ok": true,
+      "error": "",
+      "note": "destination pass2: + infant age 1 pricecheck"
+    },
+    {
+      "fullPath": "/v1/hotels/checkHotelRate",
+      "file": "fixtures/gds/v1_hotels_checkHotelRate/569d8cd866028b64d1137052b38e0ed7722833e31c802bf3eecab0966217de61.json",
+      "digest": "569d8cd866028b64d1137052b38e0ed7722833e31c802bf3eecab0966217de61",
+      "ok": true,
+      "error": "",
+      "note": "destination pass1: adults only pricecheck"
+    },
+    {
+      "fullPath": "/v1/hotels/checkHotelRate",
+      "file": "fixtures/gds/v1_hotels_checkHotelRate/6db1bdaab96725498b625aa9b6a016e92da47d9f73445b8abf2bb26f58b570d9.json",
+      "digest": "6db1bdaab96725498b625aa9b6a016e92da47d9f73445b8abf2bb26f58b570d9",
+      "ok": true,
+      "error": "",
+      "note": "destination pass1: adults only pricecheck"
+    },
+    {
+      "fullPath": "/v1/hotels/checkHotelRate",
+      "file": "fixtures/gds/v1_hotels_checkHotelRate/79522f5b22cd68adfaa8a12801ffab903b16133f50435c4c80e75144c82399e5.json",
+      "digest": "79522f5b22cd68adfaa8a12801ffab903b16133f50435c4c80e75144c82399e5",
+      "ok": true,
+      "error": "",
+      "note": "hub pass1: adults only pricecheck"
+    },
+    {
+      "fullPath": "/v1/hotels/checkHotelRate",
+      "file": "fixtures/gds/v1_hotels_checkHotelRate/86734feaec08eeb6198155769c02be6fb86fe5021272975d01b9ad8fc4fee1c9.json",
+      "digest": "86734feaec08eeb6198155769c02be6fb86fe5021272975d01b9ad8fc4fee1c9",
+      "ok": true,
+      "error": "",
+      "note": "destination pass2: + infant age 1 pricecheck"
+    },
+    {
+      "fullPath": "/v1/hotels/checkHotelRate",
+      "file": "fixtures/gds/v1_hotels_checkHotelRate/ae706bf58f29383e907dd5e229890f6e5922195ad3113d9cdca293c3077a4883.json",
+      "digest": "ae706bf58f29383e907dd5e229890f6e5922195ad3113d9cdca293c3077a4883",
+      "ok": true,
+      "error": "",
+      "note": "destination pass1: adults only pricecheck"
+    },
+    {
+      "fullPath": "/v1/hotels/checkHotelRate",
+      "file": "fixtures/gds/v1_hotels_checkHotelRate/b502ac555d1dca2bd7c6180609ac59f71b25dccb9b6a04b1b10d3e9f5416552f.json",
+      "digest": "b502ac555d1dca2bd7c6180609ac59f71b25dccb9b6a04b1b10d3e9f5416552f",
+      "ok": true,
+      "error": "",
+      "note": "destination pass2: + infant age 1 pricecheck"
+    },
+    {
+      "fullPath": "/v1/hotels/checkHotelRate",
+      "file": "fixtures/gds/v1_hotels_checkHotelRate/f71701bf370c5f2716ddd5e5bdac6d46ea17e90e88dd1b3e02682f7cd2008d95.json",
+      "digest": "f71701bf370c5f2716ddd5e5bdac6d46ea17e90e88dd1b3e02682f7cd2008d95",
+      "ok": true,
+      "error": "",
+      "note": "hub pass2: + infant age 1 pricecheck"
+    },
+    {
+      "fullPath": "/v1/hotels/getHotelRates",
+      "file": "fixtures/gds/v1_hotels_getHotelRates/265335feb6d2de5dc25248d60ae13ca1988233a20e7904737b70ba8b1e2e48c4.json",
+      "digest": "265335feb6d2de5dc25248d60ae13ca1988233a20e7904737b70ba8b1e2e48c4",
+      "ok": true,
+      "error": "",
+      "note": "hub pass2: + infant age 1"
+    },
+    {
+      "fullPath": "/v1/hotels/getHotelRates",
+      "file": "fixtures/gds/v1_hotels_getHotelRates/3690427bf8bc03f7a5072d94599eece8b57676485acfbc6581f0b193227b1372.json",
+      "digest": "3690427bf8bc03f7a5072d94599eece8b57676485acfbc6581f0b193227b1372",
+      "ok": true,
+      "error": "",
+      "note": "hub pass1: adults only"
+    },
+    {
+      "fullPath": "/v1/hotels/getHotelRates",
+      "file": "fixtures/gds/v1_hotels_getHotelRates/3f48de833f436098cf9fa705dd6f0e2c63387344c7175e7ecca3e51b190c3e38.json",
+      "digest": "3f48de833f436098cf9fa705dd6f0e2c63387344c7175e7ecca3e51b190c3e38",
+      "ok": true,
+      "error": "",
+      "note": "hub pass1: adults only"
+    },
+    {
+      "fullPath": "/v1/hotels/getHotelRates",
+      "file": "fixtures/gds/v1_hotels_getHotelRates/4b50427000d8fcc0a327cb8978d709974b631366b8ea03b13d9be49f4c229202.json",
+      "digest": "4b50427000d8fcc0a327cb8978d709974b631366b8ea03b13d9be49f4c229202",
+      "ok": true,
+      "error": "",
+      "note": "hub pass1: adults only"
+    },
+    {
+      "fullPath": "/v1/hotels/getHotelRates",
+      "file": "fixtures/gds/v1_hotels_getHotelRates/9013a8cbc0d6c4d6bc52bef53996afbdc490d7aae4ab2b5e2aee092b1be12fd4.json",
+      "digest": "9013a8cbc0d6c4d6bc52bef53996afbdc490d7aae4ab2b5e2aee092b1be12fd4",
+      "ok": true,
+      "error": "",
+      "note": "hub pass2: + infant age 1"
+    },
+    {
+      "fullPath": "/v1/hotels/getHotelRates",
+      "file": "fixtures/gds/v1_hotels_getHotelRates/9f7dec569e21ae5f90b85a8b7ed4ec979536c16005344fb3b358ba94cf33099e.json",
+      "digest": "9f7dec569e21ae5f90b85a8b7ed4ec979536c16005344fb3b358ba94cf33099e",
+      "ok": true,
+      "error": "",
+      "note": "destination pass2: + infant age 1"
+    },
+    {
+      "fullPath": "/v1/hotels/getHotelRates",
+      "file": "fixtures/gds/v1_hotels_getHotelRates/ab0dcc864900595fac42c2d19d3b62ad1485c19d4198e7240311e871569e05f2.json",
+      "digest": "ab0dcc864900595fac42c2d19d3b62ad1485c19d4198e7240311e871569e05f2",
+      "ok": true,
+      "error": "",
+      "note": "hub pass2: + infant age 1"
+    },
+    {
+      "fullPath": "/v1/hotels/getHotelRates",
+      "file": "fixtures/gds/v1_hotels_getHotelRates/ad1dd2e2302b32e789835783cfd667f0577528229494a15ab60d475a59f76753.json",
+      "digest": "ad1dd2e2302b32e789835783cfd667f0577528229494a15ab60d475a59f76753",
+      "ok": true,
+      "error": "",
+      "note": "rates for Sheraton Chicago Ohare Airport (2 ADT + 1 child)"
+    },
+    {
+      "fullPath": "/v1/hotels/getHotelRates",
+      "file": "fixtures/gds/v1_hotels_getHotelRates/f1cf473f13e7665ff6e65171698a60f90a73c7a06e7dd0b02312f7189263e265.json",
+      "digest": "f1cf473f13e7665ff6e65171698a60f90a73c7a06e7dd0b02312f7189263e265",
+      "ok": true,
+      "error": "",
+      "note": "rates for Hilton Chicago O'hare Airport (2 ADT + 1 child)"
+    },
+    {
+      "fullPath": "/v1/hotels/getHotelRates",
+      "file": "fixtures/gds/v1_hotels_getHotelRates/f9e405de1490f6b28e5a9961a452c5becd47e2c443ab519cd8578e3caba6e989.json",
+      "digest": "f9e405de1490f6b28e5a9961a452c5becd47e2c443ab519cd8578e3caba6e989",
+      "ok": true,
+      "error": "",
+      "note": "destination pass1: adults only"
+    },
+    {
+      "fullPath": "/v1/hotels/hotelSearch",
+      "file": "fixtures/gds/v1_hotels_hotelSearch/1ad1a1da94f94d585de1715dccf19d961e1478bdb9c21bbf6793d20a97518ad6.json",
+      "digest": "1ad1a1da94f94d585de1715dccf19d961e1478bdb9c21bbf6793d20a97518ad6",
+      "ok": true,
+      "error": "",
+      "note": "ORD airport hotels, one night"
+    },
+    {
+      "fullPath": "/v1/hotels/hotelSearch",
+      "file": "fixtures/gds/v1_hotels_hotelSearch/1a1c715eb8b834a2da318aacee5882d7e68d589fae2aca952ca49448542ccd95.json",
+      "digest": "1a1c715eb8b834a2da318aacee5882d7e68d589fae2aca952ca49448542ccd95",
+      "ok": true,
+      "error": "",
+      "note": "hub search"
+    },
+    {
+      "fullPath": "/v1/hotels/hotelSearch",
+      "file": "fixtures/gds/v1_hotels_hotelSearch/e51d1f7e5b0ba53649b2b8d27d58c5718b00c87e5611b5b28f7205d13307cade.json",
+      "digest": "e51d1f7e5b0ba53649b2b8d27d58c5718b00c87e5611b5b28f7205d13307cade",
+      "ok": true,
+      "error": "",
+      "note": "destination search"
+    },
+    {
+      "fullPath": "/v1/offers/flightShop",
+      "file": "fixtures/gds/v1_offers_flightShop/1ab02936a8a4431df4c22bae047be5ce2222273660d4c06735a5e13431dd8bff.json",
+      "digest": "1ab02936a8a4431df4c22bae047be5ce2222273660d4c06735a5e13431dd8bff",
+      "ok": true,
+      "error": "",
+      "note": "onward ORD->YYC, next morning (after an overnight)"
+    },
+    {
+      "fullPath": "/v1/offers/flightShop",
+      "file": "fixtures/gds/v1_offers_flightShop/7ce057e035fe831e4bd4166d900e4e2d1cd4f17b64b8af94f36c6714d0315e35.json",
+      "digest": "7ce057e035fe831e4bd4166d900e4e2d1cd4f17b64b8af94f36c6714d0315e35",
+      "ok": true,
+      "error": "",
+      "note": "round trip JFK<->YYC, 5 nights, 2 ADT + 1 INF"
+    },
+    {
+      "fullPath": "/v1/offers/flightShop",
+      "file": "fixtures/gds/v1_offers_flightShop/a602a6a077d87bbd7ce0551cb77ca59f21e621dd47fdd087923614b35173561e.json",
+      "digest": "a602a6a077d87bbd7ce0551cb77ca59f21e621dd47fdd087923614b35173561e",
+      "ok": true,
+      "error": "",
+      "note": "onward ORD->YYC, same day (later connection)"
+    },
+    {
+      "fullPath": "/v1/trip/orders/cancelBooking",
+      "file": "fixtures/gds/v1_trip_orders_cancelBooking/bba719e55bb7a88112b9da0aa26dde380bc1e3d64dcbca7ccae48ed16b0210c1.json",
+      "digest": "bba719e55bb7a88112b9da0aa26dde380bc1e3d64dcbca7ccae48ed16b0210c1",
+      "ok": true,
+      "error": "",
+      "note": "cancel all flight segments of a real PNR"
+    },
+    {
+      "fullPath": "/v1/trip/orders/checkFlightTickets",
+      "file": "fixtures/gds/v1_trip_orders_checkFlightTickets/9b09f66cd25c317d73b21e003bec8ec994ab6780943079c018edf2fe187e9937.json",
+      "digest": "9b09f66cd25c317d73b21e003bec8ec994ab6780943079c018edf2fe187e9937",
+      "ok": true,
+      "error": "",
+      "note": "void/refund eligibility on real issued tickets"
+    },
+    {
+      "fullPath": "/v1/trip/orders/createBooking",
+      "file": "fixtures/gds/v1_trip_orders_createBooking/34edef5eb1ed441f9b7b5f08970ef6e37ad3c8d504ae30ddbbeed3da117e7b7a.json",
+      "digest": "34edef5eb1ed441f9b7b5f08970ef6e37ad3c8d504ae30ddbbeed3da117e7b7a",
+      "ok": true,
+      "error": "",
+      "note": "mint a CERT test PNR"
+    },
+    {
+      "fullPath": "/v1/trip/orders/createBooking",
+      "file": "fixtures/gds/v1_trip_orders_createBooking/d8f04a8a5e44751a3aa0311b5c09fb3c0d2f556c1e7e74efaaa7671babe4e415.json",
+      "digest": "d8f04a8a5e44751a3aa0311b5c09fb3c0d2f556c1e7e74efaaa7671babe4e415",
+      "ok": true,
+      "error": "",
+      "note": "mint a CERT test PNR"
+    },
+    {
+      "fullPath": "/v1/trip/orders/fulfillFlightTickets",
+      "file": "fixtures/gds/v1_trip_orders_fulfillFlightTickets/b2268697421643fb6ebf28cba2404af0351e224e483567a7b8b40bd630fef9b4.json",
+      "digest": "b2268697421643fb6ebf28cba2404af0351e224e483567a7b8b40bd630fef9b4",
+      "ok": false,
+      "error": "PRINTER_NOT_ASSIGNED: No new tickets have been issued due to a lack of ticket printer assignation. Designate a r",
+      "note": "issue e-tickets with CASH form of payment"
+    },
+    {
+      "fullPath": "/v1/trip/orders/fulfillFlightTickets",
+      "file": "fixtures/gds/v1_trip_orders_fulfillFlightTickets/2f621269d82f4550fe78a7d7a299146387165c601320c0978686613b7a2c5e31.json",
+      "digest": "2f621269d82f4550fe78a7d7a299146387165c601320c0978686613b7a2c5e31",
+      "ok": true,
+      "error": "",
+      "note": "issue e-tickets, CASH FOP, printer profile 1"
+    },
+    {
+      "fullPath": "/v1/trip/orders/getBooking",
+      "file": "fixtures/gds/v1_trip_orders_getBooking/72111b898bd986a3dee272d56a5f3f39c064c78d874c3d7be24d5c4d2927d6cf.json",
+      "digest": "72111b898bd986a3dee272d56a5f3f39c064c78d874c3d7be24d5c4d2927d6cf",
+      "ok": true,
+      "error": "",
+      "note": "retrieve the real PNR"
+    },
+    {
+      "fullPath": "/v1/trip/orders/getBooking",
+      "file": "fixtures/gds/v1_trip_orders_getBooking/ffadfa6140a22603e59f1aaaa47dcbe267d35aadad725e392c330f33c9d25872.json",
+      "digest": "ffadfa6140a22603e59f1aaaa47dcbe267d35aadad725e392c330f33c9d25872",
+      "ok": true,
+      "error": "",
+      "note": "retrieve the real PNR"
+    },
+    {
+      "fullPath": "/v1/trip/orders/getBooking",
+      "file": "fixtures/gds/v1_trip_orders_getBooking/2e90e9ddc5ae59574d6323f68aecd54cc6c56564b52caf1eff39f4f914226190.json",
+      "digest": "2e90e9ddc5ae59574d6323f68aecd54cc6c56564b52caf1eff39f4f914226190",
+      "ok": true,
+      "error": "",
+      "note": "post-void retrieve: returnOnly avoids the FareRules failure"
+    },
+    {
+      "fullPath": "/v1/trip/orders/modifyBooking",
+      "file": "fixtures/gds/v1_trip_orders_modifyBooking/cd10ec181af9571d5e5fa713234da352edb9b89b4a8f504b9d3b95eeb1d8d60f.json",
+      "digest": "cd10ec181af9571d5e5fa713234da352edb9b89b4a8f504b9d3b95eeb1d8d60f",
+      "ok": true,
+      "error": "",
+      "note": "add Secure Flight/TSA identity documents (the Change path)"
+    },
+    {
+      "fullPath": "/v1/trip/orders/voidFlightTickets",
+      "file": "fixtures/gds/v1_trip_orders_voidFlightTickets/8bdb451d3236c46af2b76c8f6fd693ced978f1ae2683cfa56626ab9dfa85b2c2.json",
+      "digest": "8bdb451d3236c46af2b76c8f6fd693ced978f1ae2683cfa56626ab9dfa85b2c2",
+      "ok": true,
+      "error": "",
+      "note": "void real issued tickets (cleanup + fixture)"
+    }
+  ]
+}

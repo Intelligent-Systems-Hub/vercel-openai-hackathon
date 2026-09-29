@@ -1,0 +1,172 @@
+.panel {
+  background: var(--stage-2);
+  border: 1px solid var(--stage-line);
+  border-radius: 14px;
+  padding: 14px;
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+
+.panelHead {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stage-muted);
+}
+
+.model {
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--agent);
+}
+
+.empty {
+  margin: 0;
+  color: var(--stage-muted);
+  font-size: 13px;
+}
+
+.controls {
+  display: grid;
+  gap: 8px;
+}
+
+.primary,
+.ghost {
+  appearance: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+}
+
+.primary {
+  border: 0;
+  background: var(--warn-line);
+  color: #3b1d00;
+}
+
+.ghost {
+  border: 1px solid var(--stage-line);
+  background: transparent;
+  color: var(--stage-ink);
+}
+
+.primary:disabled,
+.ghost:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--stage-muted);
+}
+
+.toggle {
+  display: inline-flex;
+  border: 1px solid var(--stage-line);
+  border-radius: 10px;
+  overflow: hidden;
+  width: max-content;
+}
+
+.toggle button {
+  appearance: none;
+  border: 0;
+  padding: 6px 12px;
+  background: transparent;
+  color: var(--stage-ink);
+  cursor: pointer;
+}
+
+.toggle button[aria-pressed="true"] {
+  background: var(--agent);
+  color: #fff;
+}
+
+.toggle button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.memory {
+  margin: 0;
+  padding-left: 16px;
+  color: var(--stage-ink);
+}
+
+.rail {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.event {
+  border-left: 2px solid var(--stage-line);
+  padding: 2px 0 2px 10px;
+  display: grid;
+  gap: 4px;
+}
+
+.eventHead {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--stage-ink);
+}
+
+.eventBody {
+  font-size: 12px;
+  color: var(--stage-muted);
+}
+
+.status {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.run {
+  color: var(--stage-muted);
+}
+
+.wait {
+  color: var(--warn-line);
+}
+
+.ok {
+  color: #5fd3a0;
+}
+
+.no {
+  color: #f08a7a;
+}
+
+.calls {
+  margin: 4px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 2px;
+}
+
+.calls code {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  color: var(--stage-ink);
+}
+
+.match {
+  color: #5fd3a0;
+}
+
+.bad {
+  color: #f08a7a;
+}

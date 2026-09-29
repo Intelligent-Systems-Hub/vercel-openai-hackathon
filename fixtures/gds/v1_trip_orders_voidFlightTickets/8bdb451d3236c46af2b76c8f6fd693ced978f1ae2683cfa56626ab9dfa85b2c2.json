@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "fullPath": "/v1/trip/orders/voidFlightTickets",
+    "requestDigest": "8bdb451d3236c46af2b76c8f6fd693ced978f1ae2683cfa56626ab9dfa85b2c2",
+    "capturedAt": "2026-07-27T18:32:30.051469+00:00",
+    "ok": true,
+    "error": "",
+    "note": "void real issued tickets (cleanup + fixture)"
+  },
+  "request": {
+    "tickets": [
+      "0015550100560",
+      "0015550100562"
+    ],
+    "designatePrinters": [
+      {
+        "profileNumber": 1
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body": "{\n  \"timestamp\": \"2026-07-27T18:32:29\",\n  \"request\": {\n    \"errorHandlingPolicy\": \"HALT_ON_ERROR\",\n    \"tickets\": [\n      \"0015550100560\",\n      \"0015550100562\"\n    ],\n    \"designatePrinters\": [\n      {\n        \"profileNumber\": 1\n      }\n    ],\n    \"voidNonElectronicTickets\": false\n  },\n  \"voidedTickets\": [\n    \"0015550100560\",\n    \"0015550100562\"\n  ]\n}"
+  }
+}

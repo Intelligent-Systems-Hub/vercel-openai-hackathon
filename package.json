@@ -1,0 +1,42 @@
+{
+  "name": "trip-repair-agent",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "node scripts/check-leaks.mjs",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check-leaks": "node scripts/check-leaks.mjs",
+    "e2e": "playwright test",
+    "eval": "vitest run --config vitest.eval.config.mts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^4.0.73",
+    "@ai-sdk/react": "^4.0.115",
+    "@upstash/redis": "^1.39.0",
+    "ai": "^7.0.112",
+    "next": "16.3.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^24.13.6",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.6",
+    "jsdom": "^30.1.1",
+    "typescript": "^5",
+    "vitest": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

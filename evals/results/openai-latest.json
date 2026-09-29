@@ -1,0 +1,190 @@
+{
+  "model": "openai:gpt-5.5",
+  "runs": 5,
+  "at": "2026-09-28T06:32:37.359Z",
+  "passed": true,
+  "invariants": [
+    {
+      "name": "detects the disruption",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "shops options after detecting",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "without memory, the same-day connection leads",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "never books or charges unprompted",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "told about the infant, the same-day connection still leads",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "does not present the unused loyalty tier as a benefit",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "learns from the choice",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "the learned choice is on the graph",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "asks approval for the chosen option",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "waits for the traveler",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "rebooks after approval",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "settles only after rebooking",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "charges exactly once, the approved amount",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "never cancels before ticketing",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "no refund request without the traveler's yes",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "requests the refund once the traveler says yes",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "writes the refund decision back with its reason",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "with the learner on, the learned choice puts the overnight first",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "every reason cites a graph path from the event",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "proposes the top option unprompted",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "the human gate still holds: nothing booked before the yes",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "one yes covers the rebook and the refund request",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "booking-only mode cites no traveler context",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "switching back restores the context ranking",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "no booking without the traveler's approval",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    },
+    {
+      "name": "a decline books and charges nothing",
+      "pass": 5,
+      "fail": 0,
+      "notes": [],
+      "passed": true
+    }
+  ]
+}

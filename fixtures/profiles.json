@@ -1,0 +1,19 @@
+{
+  "_note": "The traveler profile system: preferences and entitlements, keyed by traveler id. Separate from bookings; the context graph fetches from it by id.",
+  "maya": {
+    "preferences": [
+      {
+        "kind": "flight_routing",
+        "value": "direct_only",
+        "label": "Direct flights only"
+      }
+    ],
+    "entitlements": [
+      {
+        "program": "Hotel rewards",
+        "tier": "Gold",
+        "redemption": "points_first"
+      }
+    ]
+  }
+}

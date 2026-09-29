@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "fullPath": "/v1/trip/orders/modifyBooking",
+    "requestDigest": "cd10ec181af9571d5e5fa713234da352edb9b89b4a8f504b9d3b95eeb1d8d60f",
+    "capturedAt": "2026-07-27T18:31:47.880024+00:00",
+    "ok": true,
+    "error": "",
+    "note": "add Secure Flight/TSA identity documents (the Change path)"
+  },
+  "request": {
+    "confirmationId": "QKRVTA",
+    "bookingSignature": "04535abd4ef1ed17eca8bd1346a5123696d09051d280c664a55fc2e4a2f8463604535abd4ef1ed17eca8bd1346a5123696d09051d280c664a55fc2e4a2f84636",
+    "before": {},
+    "after": {
+      "travelers": [
+        {
+          "givenName": "MAYA",
+          "surname": "RIVERA",
+          "birthDate": "1985-04-12",
+          "passengerCode": "ADT",
+          "identityDocuments": [
+            {
+              "documentNumber": "XD000001",
+              "documentType": "PASSPORT",
+              "expiryDate": "2032-01-01",
+              "issuingCountryCode": "US",
+              "residenceCountryCode": "US",
+              "givenName": "MAYA",
+              "surname": "RIVERA",
+              "birthDate": "1985-04-12",
+              "gender": "FEMALE",
+              "isPrimaryDocumentHolder": true
+            }
+          ]
+        },
+        {
+          "givenName": "SAM",
+          "surname": "RIVERA",
+          "birthDate": "1983-09-30",
+          "passengerCode": "ADT",
+          "identityDocuments": [
+            {
+              "documentNumber": "XD000002",
+              "documentType": "PASSPORT",
+              "expiryDate": "2032-01-01",
+              "issuingCountryCode": "US",
+              "residenceCountryCode": "US",
+              "givenName": "SAM",
+              "surname": "RIVERA",
+              "birthDate": "1983-09-30",
+              "gender": "MALE",
+              "isPrimaryDocumentHolder": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body": "{\n  \"timestamp\": \"2026-07-27T18:31:47\",\n  \"request\": {\n    \"bookingSignature\": \"04535abd4ef1ed17eca8bd1346a5123696d09051d280c664a55fc2e4a2f8463604535abd4ef1ed17eca8bd1346a5123696d09051d280c664a55fc2e4a2f84636\",\n    \"confirmationId\": \"QKRVTA\",\n    \"retrieveBooking\": false,\n    \"receivedFrom\": \"Modify Booking\",\n    \"before\": {},\n    \"after\": {\n      \"travelers\": [\n        {\n          \"givenName\": \"MAYA\",\n          \"surname\": \"RIVERA\",\n          \"birthDate\": \"1985-04-12\",\n          \"passengerCode\": \"ADT\",\n          \"identityDocuments\": [\n            {\n              \"documentNumber\": \"XD000001\",\n              \"documentType\": \"PASSPORT\",\n              \"expiryDate\": \"2032-01-01\",\n              \"issuingCountryCode\": \"US\",\n              \"residenceCountryCode\": \"US\",\n              \"givenName\": \"MAYA\",\n              \"surname\": \"RIVERA\",\n              \"birthDate\": \"1985-04-12\",\n              \"gender\": \"FEMALE\",\n              \"isPrimaryDocumentHolder\": true\n            }\n          ]\n        },\n        {\n          \"givenName\": \"SAM\",\n          \"surname\": \"RIVERA\",\n          \"birthDate\": \"1983-09-30\",\n          \"passengerCode\": \"ADT\",\n          \"identityDocuments\": [\n            {\n              \"documentNumber\": \"XD000002\",\n              \"documentType\": \"PASSPORT\",\n              \"expiryDate\": \"2032-01-01\",\n              \"issuingCountryCode\": \"US\",\n              \"residenceCountryCode\": \"US\",\n              \"givenName\": \"SAM\",\n              \"surname\": \"RIVERA\",\n              \"birthDate\": \"1983-09-30\",\n              \"gender\": \"MALE\",\n              \"isPrimaryDocumentHolder\": true\n            }\n          ]\n        }\n      ],\n      \"fares\": [\n        {\n          \"recordId\": \"1\"\n        }\n      ]\n    }\n  }\n}"
+  }
+}

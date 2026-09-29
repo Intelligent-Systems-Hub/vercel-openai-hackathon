@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "fullPath": "/v1/trip/orders/cancelBooking",
+    "requestDigest": "bba719e55bb7a88112b9da0aa26dde380bc1e3d64dcbca7ccae48ed16b0210c1",
+    "capturedAt": "2026-07-27T18:20:47.338890+00:00",
+    "ok": true,
+    "error": "",
+    "note": "cancel all flight segments of a real PNR"
+  },
+  "request": {
+    "confirmationId": "QKRVTB",
+    "flights": [
+      {
+        "itemId": "10"
+      },
+      {
+        "itemId": "11"
+      },
+      {
+        "itemId": "12"
+      },
+      {
+        "itemId": "13"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body": "{\n  \"timestamp\": \"2026-07-27T18:20:47\",\n  \"request\": {\n    \"confirmationId\": \"QKRVTB\",\n    \"retrieveBooking\": false,\n    \"errorHandlingPolicy\": \"HALT_ON_ERROR\",\n    \"cancelAll\": false,\n    \"flights\": [\n      {\n        \"itemId\": \"10\"\n      },\n      {\n        \"itemId\": \"11\"\n      },\n      {\n        \"itemId\": \"12\"\n      },\n      {\n        \"itemId\": \"13\"\n      }\n    ],\n    \"voidNonElectronicTickets\": false,\n    \"refundDocumentsType\": \"Tickets\"\n  }\n}"
+  }
+}

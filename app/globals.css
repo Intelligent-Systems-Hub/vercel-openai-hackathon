@@ -1,0 +1,47 @@
+:root {
+  /* the stage around the phone */
+  --stage: #0f1720;
+  --stage-2: #16212c;
+  --stage-line: #243140;
+  --stage-ink: #e6edf3;
+  --stage-muted: #8ea0b2;
+
+  /* the traveler's app */
+  --surface: #ffffff;
+  --page: #f3f5f7;
+  --ink: #16202a;
+  --muted: #5d6b79;
+  --line: #dde3e9;
+  --chip: #eef2f5;
+
+  --agent: #0e8a7e;
+  --accent: #0e8a7e;
+  --ok: #1d7a3a;
+  --warn: #a4520a;
+  --warn-bg: #fff8ef;
+  --warn-line: #f0c998;
+
+  /* the context graph */
+  --graph-hot: #f08a7a;
+  --graph-spine: #6cb6ff;
+  --graph-ctx: #b392f0;
+  --graph-good: #5fd3a0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--stage);
+  color: var(--stage-ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font: inherit;
+}

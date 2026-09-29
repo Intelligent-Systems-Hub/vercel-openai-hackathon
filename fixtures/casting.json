@@ -1,0 +1,23 @@
+{
+  "captureDepart": "2026-07-30",
+  "roles": {
+    "seedOffer": { "path": "/v1/offers/flightShop", "digest": "7ce057e035fe831e4bd4166d900e4e2d1cd4f17b64b8af94f36c6714d0315e35", "note": "round trip via the hub, 5 nights, 2 adults + 1 infant: the booked trip" },
+    "sameDayShop": { "path": "/v1/offers/flightShop", "digest": "a602a6a077d87bbd7ce0551cb77ca59f21e621dd47fdd087923614b35173561e", "note": "hub to destination, same day (later connection)" },
+    "nextMorningShop": { "path": "/v1/offers/flightShop", "digest": "1ab02936a8a4431df4c22bae047be5ce2222273660d4c06735a5e13431dd8bff", "note": "hub to destination, next morning (after an overnight)" },
+    "hubHotelSearch": { "path": "/v1/hotels/hotelSearch", "digest": "1ad1a1da94f94d585de1715dccf19d961e1478bdb9c21bbf6793d20a97518ad6", "note": "airport hotels at the hub, one night" },
+    "cribRates": { "path": "/v1/hotels/getHotelRates", "digest": "ad1dd2e2302b32e789835783cfd667f0577528229494a15ab60d475a59f76753", "note": "hub hotel, 2 adults + 1 child, crib free, 401.79 total" }
+  },
+  "rebook": {
+    "oldBookingCode": "QKRVTB",
+    "newBookingCode": "QKRVTA",
+    "steps": [
+      { "step": "getBooking", "path": "/v1/trip/orders/getBooking", "digest": "72111b898bd986a3dee272d56a5f3f39c064c78d874c3d7be24d5c4d2927d6cf", "booking": "old" },
+      { "step": "checkFlightTickets", "path": "/v1/trip/orders/checkFlightTickets", "digest": "9b09f66cd25c317d73b21e003bec8ec994ab6780943079c018edf2fe187e9937", "booking": "old" },
+      { "step": "createBooking", "path": "/v1/trip/orders/createBooking", "digest": "d8f04a8a5e44751a3aa0311b5c09fb3c0d2f556c1e7e74efaaa7671babe4e415", "booking": "new" },
+      { "step": "fulfillFlightTickets", "path": "/v1/trip/orders/fulfillFlightTickets", "digest": "2f621269d82f4550fe78a7d7a299146387165c601320c0978686613b7a2c5e31", "booking": "new" },
+      { "step": "cancelBooking", "path": "/v1/trip/orders/cancelBooking", "digest": "bba719e55bb7a88112b9da0aa26dde380bc1e3d64dcbca7ccae48ed16b0210c1", "booking": "old" },
+      { "step": "getBooking", "path": "/v1/trip/orders/getBooking", "digest": "ffadfa6140a22603e59f1aaaa47dcbe267d35aadad725e392c330f33c9d25872", "booking": "new" }
+    ],
+    "failedFulfill": { "path": "/v1/trip/orders/fulfillFlightTickets", "digest": "b2268697421643fb6ebf28cba2404af0351e224e483567a7b8b40bd630fef9b4", "note": "ticketing refused: the never-strand test case" }
+  }
+}
